@@ -1,6 +1,3 @@
-<script src="assets/components/jquery/jquery.js"></script>
-<script src="assets/components/bootstrap/bootstrap.js"></script>
-
 <script src="assets/js/form.class.js"></script>
 <script src="assets/js/portfolio.class.js"></script>
 
