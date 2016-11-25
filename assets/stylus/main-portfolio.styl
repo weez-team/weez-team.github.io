@@ -1,0 +1,65 @@
+main .portfolio-description h2
+	text-align left
+	
+main .portfolio-page
+	background-color color-bg
+	padding 60px 0
+
+	h2
+		text-align left
+
+	.latest,
+	.latest img
+		width 100%
+		height auto
+
+	.columns
+		margin 0 -15px
+
+		.case
+			display block
+			max-width 360px
+			margin 0 auto 30px
+			background-color #fff
+			box-shadow 0 0 10px 0 alpha(color-portfolio-title, 0.8)
+
+			&:hover
+				text-decoration none
+
+			.work
+				height auto
+				overflow hidden
+				position relative
+				
+				&:after
+					content ''
+					display block
+					width 100%
+					height 100px
+					background linear-gradient(to bottom, transparent, color-portfolio-title)
+					position absolute
+					bottom 0
+					
+			.title
+				height 48px
+				margin 0
+				padding 0
+				text-decoration none
+				text-align center
+				font-size 14px
+				line-height 48px
+				vertical-align middle
+				overflow hidden
+				background-color color-portfolio-title
+				color #fff
+				
+				&:hover
+					text-decoration underline
+
+
+	.button
+		margin 45px auto 0
+
+		&.nomore
+			background-color #aaa
+			border-bottom 4px solid #999

@@ -1,0 +1,38 @@
+main aside .search-form
+	display block
+	width 100%
+
+	input
+		display block
+		height 40px
+		font-size 14px
+		line-height 40px
+		vertical-align middle
+		text-shadow 0 0 0.01px
+		outline none
+		float left
+
+		&[name="search"]
+			width calc(100% - 40px)
+			padding 0 5px
+			border 1px solid #EBEBEA
+			border-right none
+			transition-duration 400ms
+			transition-property border-color
+
+			&:focus
+				border 1px solid color-main
+				border-right none
+
+	.submit
+		width 40px
+		border 1px solid transparent
+		border-left 0
+		background color-main url(../img/blog/search.png) 0 0 no-repeat
+		background-position center
+		transition-duration 400ms
+		transition-property background-color
+
+		&:focus,
+		&:hover
+			background-color color-active

@@ -1,2 +1,4 @@
 weez-team.sublime-project
 weez-team.sublime-workspace
+*.cmd
+*.bat

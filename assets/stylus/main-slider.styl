@@ -1,0 +1,69 @@
+banner-height = 440px
+banner-height-small = 180px
+banner-margin-top = (banner-height - 180px) / 2
+banner-margin-top-small = ((banner-height-small - 56px) / 2)
+
+main .banner
+	width 100%
+	height auto
+	padding 0
+	position relative
+	background transparent url(../img/header/bg-4.png) 0 0 repeat
+	background-position center
+	background-attachment fixed
+
+	.container
+		height banner-height
+		padding banner-margin-top 0 0
+		text-align center
+		background-color transparent
+		
+		h2, h3, a
+			color #fff
+		
+		h2
+			margin 0 auto 15px
+			font-size 32px
+			font-weight normal
+			letter-spacing 1px
+			text-transform none
+		
+		h3
+			margin 0 auto
+			font-size 18px
+		
+		a
+			display inline-block
+			margin 45px auto 0
+			padding 15px 30px
+			font-size 16px
+			letter-spacing 1px
+			border 1px solid #fff
+			text-transform uppercase
+			background-color transparent
+			
+			&:hover,
+			&:focus,
+			&:active
+				background-color #fff
+				text-decoration none
+				color #000
+
+main .banner.small
+	
+	.container
+		height banner-height-small
+		padding banner-margin-top-small 0 0
+		text-align right
+		
+		h2
+			display inline-block
+			height 56px
+			padding 0
+			font-size 16px
+			text-transform uppercase
+			text-align right
+		
+		a
+			display inline-block
+			margin 0 60px 0 30px

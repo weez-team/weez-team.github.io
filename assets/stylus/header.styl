@@ -1,0 +1,57 @@
+header
+	
+	nav
+		padding 5px 0 10px
+		text-align right
+		
+		a.logo
+			display block
+			width 160px
+			height 60px
+			background transparent url(../img/logo.png) 0 0 no-repeat
+			background-size contain
+			background-position center
+			background-origin content-box
+			float left
+			
+			&:after
+				display none
+
+		a
+			display inline-block
+			padding 20px 30px
+			text-transform uppercase
+			font-size 14px
+			color #333
+			position relative
+			outline none
+			text-shadow 0 0 0.01px
+			transition-duration 400ms
+			transition-property color
+
+			&:active,
+			&:focus,
+			&:hover,
+			&.active
+				text-decoration none
+				color #ff7772
+				outline none
+			
+			&:after
+				content ''
+				display block
+				width 0
+				height 3px
+				background #ff7772
+				position absolute
+				bottom 10px
+				left 50%
+				transition-duration 400ms
+				transition-property width, left
+				
+			&:active:after,
+			&:focus:after,
+			&:hover:after,
+			&.active:after
+				width calc(100% - 60px)
+				left 30px

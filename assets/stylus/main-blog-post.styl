@@ -1,0 +1,308 @@
+main .blog-post
+	
+	h2
+		text-align left
+
+	article
+		margin 15px 0 30px
+
+		.heading
+			margin 0
+
+			.title
+				display block
+				margin 0 0 15px
+				padding 0
+				color #111
+				text-decoration none
+				font-size 18px
+				font-weight normal
+				line-height 1.2
+				letter-spacing 0.2px
+				text-transform uppercase
+				text-shadow 0 0 0.01px
+				text-align left
+
+			.date
+				margin-top 15px
+				background-color transparent
+				color color-main
+				text-align center
+
+				.day
+					display block
+					font-size 36px
+					line-height 1
+
+				.month
+					display block
+					font-size 19px
+					line-height 1
+
+
+		.info
+			text-transform uppercase
+			font-size 12px
+			color #888
+			text-shadow 0 0 0.01px
+
+			.author
+				color color-main
+				transition-duration 400ms
+				transition-property color
+
+				&:active,
+				&:focus,
+				&:hover
+					color color-active
+					text-decoration none
+
+
+
+		.content
+			margin 0 0 30px
+
+			img
+				width auto
+				height auto
+				max-width 100%
+				max-height 100%
+				margin 15px auto
+
+			p,
+			span
+				font-size 16px
+				color #333
+				text-shadow 0 0 0.01px
+				letter-spacing 0.2px
+				line-height 1.4
+
+			p
+				margin 15px 0
+
+			h2,
+			h3,
+			h4,
+			h5,
+			h6
+				margin 45px 0 15px
+				color #111
+				text-transform uppercase
+				font-weight normal
+				text-shadow 0 0 0.01px
+				letter-spacing 0.2px
+				text-align left
+
+			h2
+				font-size 20px
+
+			h3
+				font-size 18px
+
+			h4
+				font-size 16px
+
+			h5
+				font-size 14px
+
+			h6
+				font-size 12px
+
+			& quotation
+				display block
+				padding 15px 15px 15px 30px
+				margin 45px 0
+				background-color #FFF1DB
+				border-left 4px solid #FFA92C
+				color #111
+				text-shadow 0 0 0.01px
+				font-style italic
+				font-size 15px
+				letter-spacing 0.3px
+
+
+
+		.share
+
+			span
+				font-size 16px
+				text-transform uppercase
+				line-height 50px
+				vertical-align middle
+
+			.icon
+				display inline-block
+				width 50px
+				height 50px
+				margin 0 0 0 15px
+				border-radius 50%
+				background transparent url() 0 0 no-repeat
+				background-position center
+				line-height 50px
+				vertical-align middle
+
+				&:active,
+				&:focus,
+				&:hover
+					text-decoration none
+
+				&.fb
+					background-color #386D9E
+					background-image url(../img/social/fb.png)
+
+				&.vk
+					background-color #6281A3
+					background-image url(../img/social/vk.png)
+
+				&.twitter
+					background-color #00BEEF
+					background-image url(../img/social/twitter.png)
+
+				&.gp
+					background-color #FF2E00
+					background-image url(../img/social/gp.png)
+
+
+
+
+	.about-author
+		height 200px
+		margin 60px 0 0
+
+		.photo
+			display block
+			width 100%
+			height 200px
+			background transparent url() 0 0 no-repeat
+			background-size cover
+			background-position center
+
+			&:active,
+			&:focus,
+			&:hover
+				text-decoration none
+
+		.info
+			min-height 200px
+			padding 0 15px 30px
+			/* background-color #00A9FF */
+			background-color color-main
+			color #fff
+			position relative
+
+			&:before
+				content ''
+				display block
+				width 0
+				height 0
+				border-top 12px solid transparent
+				/* border-right 12px solid #00A9FF */
+				border-right 12px solid color-main
+				border-bottom 12px solid transparent
+				position absolute
+				top 90px
+				left -12px
+
+			.title
+				display block
+				margin 30px 0 15px
+				color #fff
+				text-transform uppercase
+				font-size 16px
+				text-shadow 0 0 0.01px
+
+				&:active,
+				&:focus,
+				&:hover
+					color #fff
+					text-decoration underline
+
+			.description
+				font-size 14px
+				line-height 1.6
+
+	hr
+		width 100%
+		height 0
+		margin 60px 0
+		border none
+		border-bottom 1px solid #eee
+		float left
+
+
+
+
+
+	.reviews
+
+		article
+			margin 15px 0
+			float left
+
+		.inner article
+			padding-left 15px
+
+		.photo
+			
+			&:active,
+			&:focus,
+			&:hover
+				text-decoration none
+
+		article .photo-parent
+			padding 0
+
+		img
+			display block
+			width 80px
+			height 80px
+			margin 0 auto
+			border-radius 50%
+
+		.inner img
+			width 64px
+			height 64px
+
+		.info
+			margin 0 0 15px
+
+		.title,
+		.date,
+		.answer
+			display inline-block
+			text-transform uppercase
+			font-size 14px
+			color #111
+			text-shadow 0 0 0.01px
+
+		.date,
+		.answer
+			padding 0 0 0 15px
+			color color-main
+
+		.date
+			text-transform lowercase
+
+		.title,
+		.answer
+			transition-duration 400ms
+			transition-property color
+
+		.title:active,
+		.title:focus,
+		.title:hover
+			text-decoration none
+			color color-active
+
+		.answer:active,
+		.answer:focus,
+		.answer:hover
+			text-decoration none
+			color color-active
+
+		.text
+			margin 0 0 15px
+			font-size 15px
+			letter-spacing 0.2px
+			color #888
+			text-shadow 0 0 0.01px

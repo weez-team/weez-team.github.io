@@ -1,0 +1,86 @@
+main .contacts
+	background transparent url(../img/2.jpg) 0 0 no-repeat
+	background-size cover
+	background-position center
+	background-attachment fixed
+
+	.container
+		height 400px
+		background #fff
+		border 1px solid #e7e6e3
+		border 1px solid transparent
+		position relative
+
+	.image
+		position relative
+
+		img
+			width 410px
+			height 460px
+			position absolute
+			top -30px
+			left 15px
+
+	h2
+		text-align left
+
+	.column-half
+		width 50%
+		float left
+
+	.column-full
+		width 100%
+		float left
+
+	label
+		display block
+		font-weight normal
+
+		span
+			font-size 14px
+			line-height 1.2
+			color #888
+
+	input[type="text"],
+	input[type="email"],
+	textarea
+		display block
+		padding 5px
+		background transparent
+		border none
+		border-bottom 1px solid color-main
+		outline none
+		font-size 16px
+		color #111
+		text-shadow 0 0 0.01px
+		transition-duration 400ms
+		transition-property border-color
+
+	.column-half input[type="text"],
+	.column-half input[type="email"],
+	.column-half textarea
+		width calc(100% - 15px)
+		margin 5px 15px 5px 0
+
+	.column-full input[type="text"],
+	.column-full input[type="email"],
+	.column-full textarea
+		width calc(100% - 15px)
+		margin 5px 15px 5px 0
+
+	input:focus,
+	textarea:focus
+		border-bottom 1px solid color-active
+
+	input[type="text"],
+	input[type="email"]
+		height 30px
+
+	textarea
+		height 120px
+		resize none
+
+	.button
+		width 50%
+		margin 15px
+		float right
