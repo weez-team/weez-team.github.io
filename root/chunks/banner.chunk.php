@@ -1,3 +1,14 @@
+<?php if ( !empty($small) ) { ?>
+
+<section class="banner small">
+	<div class="container clearfix">
+		<h2>Разработка сайтов и веб-приложений</h2>
+		<a class="scrollToContacts" href="#contacts">Свяжитесь с нами</a>
+	</div>
+</section>
+
+<?php } else { ?>
+
 <section class="banner">
 	<div class="container clearfix">
 		<h2>Разработка сайтов и веб-приложений</h2>
@@ -5,3 +16,5 @@
 		<a class="scrollToContacts" href="#contacts">Свяжитесь с нами</a>
 	</div>
 </section>
+
+<?php }

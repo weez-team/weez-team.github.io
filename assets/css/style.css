@@ -838,6 +838,7 @@ main .portfolio-page .columns .case:hover {
 }
 main .portfolio-page .columns .case .work {
   height: auto;
+  max-height: 480px;
   overflow: hidden;
   position: relative;
 }
@@ -849,6 +850,9 @@ main .portfolio-page .columns .case .work:after {
   background: linear-gradient(to bottom, transparent, #2d2c3a);
   position: absolute;
   bottom: 0;
+}
+main .portfolio-page .columns .case .work img {
+  width: 100%;
 }
 main .portfolio-page .columns .case .title {
   height: 48px;

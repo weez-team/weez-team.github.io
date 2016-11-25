@@ -6,7 +6,7 @@
 
 <body class="mainpage">
 	
-<?=$self->getChunk('header')?>
+<?=$self->getChunk('header', array('active' => $template))?>
 
 
 <main>
@@ -23,7 +23,7 @@
 <?=$self->getChunk('mainpage-portfolio')?>
 
 
-<?=$self->getChunk('mainpage-contacts')?>
+<?=$self->getChunk('contacts')?>
 
 
 </main>

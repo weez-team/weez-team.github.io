@@ -10,7 +10,9 @@ class Compiler {
 			$shortname = preg_replace('/^.*\/?([^\/\.]*)\.tpl\.php/isU', '$1', $template);
 			$filename = $output . $shortname . '.html';
 
-			$content = $this->getTemplate( $shortname );
+			$content = $this->getTemplate($shortname, array(
+				'template' => $shortname
+			));
 			file_put_contents($filename, $content);
 		}
 	}

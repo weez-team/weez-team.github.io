@@ -6,13 +6,20 @@
 
 <body class="mainpage">
 
-<?=$self->getChunk('header')?>
+<?=$self->getChunk('header', array('active' => $template))?>
 
 
 <main>
-	
-	
-	
+
+<?=$self->getChunk('banner', array('small' => true))?>
+
+
+<?=$self->getChunk('content-services')?>
+
+
+<?=$self->getChunk('contacts')?>
+
+
 </main>
 
 <?=$self->getChunk('footer')?>
