@@ -223,6 +223,7 @@ Form = (function() {
           type: form.attr('method'),
           url: form.attr('action'),
           data: data,
+          dataType: 'jsonp',
           cache: false
         }).done((function(_this) {
           return function(response) {

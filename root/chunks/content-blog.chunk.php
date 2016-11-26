@@ -82,7 +82,7 @@
 		</div>
 
 		<aside class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-			<form class="search-form" role="search" action="/ajax" method="get">
+			<form class="search-form" role="search" action="//weez.pro/ajax" method="post">
 				<input type="text" name="search" placeholder="Поиск">
 				<input type="submit" class="submit" value="">
 			</form>
