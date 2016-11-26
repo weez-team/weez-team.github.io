@@ -163,7 +163,6 @@ Form = (function() {
           processData: false,
           contentType: false
         };
-        console.log(opts);
         $.ajax(opts).done((function(_this) {
           return function(answer) {
             if (typeof answer.success !== 'undefined') {
@@ -226,7 +225,6 @@ Form = (function() {
           url: form.attr('action'),
           data: data
         };
-        console.log(opts);
         $.ajax(opts).done((function(_this) {
           return function(response) {
             var answer, error, error1;

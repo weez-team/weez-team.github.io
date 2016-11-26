@@ -115,8 +115,6 @@ class Form
 					processData: false
 					contentType: false
 
-				console.log opts
-
 				$.ajax( opts )
 				.done(( answer )=>
 					if typeof answer.success isnt 'undefined'
@@ -158,8 +156,6 @@ class Form
 					type: form.attr 'method'
 					url: form.attr 'action'
 					data: data
-
-				console.log opts
 
 				$.ajax(opts)
 				.done(( response )=>
