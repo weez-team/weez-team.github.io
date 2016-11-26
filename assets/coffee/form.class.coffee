@@ -106,7 +106,7 @@ class Form
 				query = form.serialize()
 				if query.length then url += '&'+ query
 
-				$.ajax(
+				opts =
 					type: form.attr 'method'
 					url: url
 					data: data
@@ -114,7 +114,10 @@ class Form
 					dataType: 'json'
 					processData: false
 					contentType: false
-				)
+
+				console.log opts
+
+				$.ajax( opts )
 				.done(( answer )=>
 					if typeof answer.success isnt 'undefined'
 						if @opts.reset then form.trigger 'reset'
@@ -151,12 +154,14 @@ class Form
 
 				break
 			else
-				$.ajax(
+				opts =
 					type: form.attr 'method'
 					url: form.attr 'action'
 					data: data
-					cache: false
-				)
+
+				console.log opts
+
+				$.ajax(opts)
 				.done(( response )=>
 					try
 						answer = JSON.parse response

@@ -123,7 +123,7 @@ Form = (function() {
   };
 
   Form.prototype.submit = function(o) {
-    var data, form, query, result, url;
+    var data, form, opts, query, result, url;
     if (typeof o.form === 'undefined') {
       return false;
     }
@@ -154,7 +154,7 @@ Form = (function() {
         if (query.length) {
           url += '&' + query;
         }
-        $.ajax({
+        opts = {
           type: form.attr('method'),
           url: url,
           data: data,
@@ -162,7 +162,9 @@ Form = (function() {
           dataType: 'json',
           processData: false,
           contentType: false
-        }).done((function(_this) {
+        };
+        console.log(opts);
+        $.ajax(opts).done((function(_this) {
           return function(answer) {
             if (typeof answer.success !== 'undefined') {
               if (_this.opts.reset) {
@@ -219,12 +221,13 @@ Form = (function() {
         })(this));
         break;
       default:
-        $.ajax({
+        opts = {
           type: form.attr('method'),
           url: form.attr('action'),
-          data: data,
-          cache: false
-        }).done((function(_this) {
+          data: data
+        };
+        console.log(opts);
+        $.ajax(opts).done((function(_this) {
           return function(response) {
             var answer, error, error1;
             try {

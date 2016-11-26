@@ -23,7 +23,7 @@
 						<i class="fa fa-instagram"></i>
 					</a>
 				</div>
-				<form class="subscribe" action="//weez.pro/ajax" method="get">
+				<form class="subscribe" action="//weez.pro/ajax" method="post">
 					<input type="text" name="act" value="subscribe" hidden>
 					<input type="email" name="email" placeholder="Ваш email">
 					<input type="submit" class="button" value="Подписаться">
