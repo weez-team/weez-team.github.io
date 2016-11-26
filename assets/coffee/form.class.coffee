@@ -156,8 +156,6 @@ class Form
 					url: form.attr 'action'
 					data: data
 					cache: false
-					headers:
-						'Access-Control-Allow-Origin': 'https://weez-team.github.io'
 				)
 				.done(( response )=>
 					try

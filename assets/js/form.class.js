@@ -223,10 +223,7 @@ Form = (function() {
           type: form.attr('method'),
           url: form.attr('action'),
           data: data,
-          cache: false,
-          headers: {
-            'Access-Control-Allow-Origin': 'https://weez-team.github.io'
-          }
+          cache: false
         }).done((function(_this) {
           return function(response) {
             var answer, error, error1;
