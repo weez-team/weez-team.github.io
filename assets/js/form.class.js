@@ -161,10 +161,7 @@ Form = (function() {
           cache: false,
           dataType: 'json',
           processData: false,
-          contentType: false,
-          headers: {
-            'Access-Control-Allow-Origin': 'https://weez-team.github.io'
-          }
+          contentType: false
         }).done((function(_this) {
           return function(answer) {
             if (typeof answer.success !== 'undefined') {

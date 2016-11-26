@@ -114,8 +114,6 @@ class Form
 					dataType: 'json'
 					processData: false
 					contentType: false
-					headers:
-						'Access-Control-Allow-Origin': 'https://weez-team.github.io'
 				)
 				.done(( answer )=>
 					if typeof answer.success isnt 'undefined'
