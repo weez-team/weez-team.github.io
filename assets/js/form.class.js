@@ -161,7 +161,10 @@ Form = (function() {
           cache: false,
           dataType: 'json',
           processData: false,
-          contentType: false
+          contentType: false,
+          headers: {
+            'Access-Control-Allow-Origin': 'https://weez-team.github.io'
+          }
         }).done((function(_this) {
           return function(answer) {
             if (typeof answer.success !== 'undefined') {
@@ -223,7 +226,10 @@ Form = (function() {
           type: form.attr('method'),
           url: form.attr('action'),
           data: data,
-          cache: false
+          cache: false,
+          headers: {
+            'Access-Control-Allow-Origin': 'https://weez-team.github.io'
+          }
         }).done((function(_this) {
           return function(response) {
             var answer, error, error1;
