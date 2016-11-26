@@ -5,7 +5,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
 			<h2>Оставьте заявку</h2>
-			<form action="/ajax" method="post">
+			<form action="//weez.pro/ajax" method="get">
 				<input type="text" name="act" value="contacts" hidden>
 				<label class="clearfix column-half">
 					<span class="pseudo-bold">Ваше имя:</span>
